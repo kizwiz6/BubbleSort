@@ -7,14 +7,13 @@
             int[] array = { 9, 1, 8, 2, 7, 3, 6, 4, 5 };
 
             Console.WriteLine("Original array:");
-            PrintArray(array);
-
-            BubbleSort(array);
-            // Array.Sort(array);
-
-
+            // PrintArray(array);
+            Array.ForEach(array, x => Console.Write($"{x}, "));
+            // BubbleSort(array);
+            Array.Sort(array);
             Console.WriteLine("\nSorted array:");
-            PrintArray(array);
+            //PrintArray(array);
+            Array.ForEach(array, Console.Write);
         }
 
         public static void BubbleSort(int[] array)
